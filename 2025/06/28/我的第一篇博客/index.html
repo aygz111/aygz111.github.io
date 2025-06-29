@@ -69,7 +69,11 @@
       
         <h1 id="我的第一篇博客：部署到-GitHub-的心得与体会"><a href="#我的第一篇博客：部署到-GitHub-的心得与体会" class="headerlink" title="我的第一篇博客：部署到 GitHub 的心得与体会"></a>我的第一篇博客：部署到 GitHub 的心得与体会</h1><p>成功将博客部署到github。这是我的首次博客记录这个过程。</p>
 <h2 id="搭建-Hexo-博客"><a href="#搭建-Hexo-博客" class="headerlink" title="搭建 Hexo 博客"></a>搭建 Hexo 博客</h2><p>首先，我根据网上的教程安装了 Hexo，过程大致如下：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br><span class="line">````</span><br><span class="line"></span><br><span class="line">本地搭建好后，运行 `hexo s` 就可以在浏览器预览博客内容了。接着，我按照官方文档配置了 `_config.yml` 文件，准备将博客部署到 GitHub Pages 上。</span><br><span class="line"></span><br><span class="line"><span class="comment">## 部署配置与遇到的问题</span></span><br><span class="line"></span><br><span class="line">部署前需要安装 `hexo-deployer-git` 插件：</span><br><span class="line"></span><br><span class="line">```bash</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init my-blog</span><br><span class="line"><span class="built_in">cd</span> my-blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>本地搭建好后，运行 <code>hexo s</code> 就可以在浏览器预览博客内容了。接着，我按照官方文档配置了 <code>_config.yml</code> 文件，准备将博客部署到 GitHub Pages 上。</p>
+<h2 id="部署配置与遇到的问题"><a href="#部署配置与遇到的问题" class="headerlink" title="部署配置与遇到的问题"></a>部署配置与遇到的问题</h2><p>部署前需要安装 <code>hexo-deployer-git</code> 插件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <p>然后在 <code>_config.yml</code> 中加入以下配置：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/你的用户名/你的仓库.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">gh-pages</span></span><br></pre></td></tr></table></figure>
@@ -92,7 +96,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cmchkflyu000160v5fga5awz8" data-title="我的第一篇博客" class="article-share-link">分享</a>
+      <a data-url="http://example.com/2025/06/28/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" data-id="cmchkkfgq0001nwv51fjk7crk" data-title="我的第一篇博客" class="article-share-link">分享</a>
       
       
       
